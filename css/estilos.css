@@ -1,0 +1,149 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+/* div {
+    border: 1px solid rgb(113, 187, 192);
+} */
+:root{
+    --color-amarillo:#DAFDBA;
+    --color-oscuro:#012030;
+    --color-azul:#13678A;
+    --color-agua:#68dac8;
+    --color-manzana: #ade4b3;
+    --color-fondo:#f2f9ec;
+}
+
+body{
+    font-family:"Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+    color: var(--color-oscuro);
+    background-color: var(--color-fondo);
+}
+header, section {
+    margin: 40px auto 0px;
+    width: 80%;
+    max-width: 960px;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+}
+
+header > h1{
+    padding: 15px 0px;
+}
+
+header > p{
+    padding: 0px 0px 20px;
+}
+
+.navegador{
+    background-color: var(--color-agua);
+    width: 100%;
+}
+
+nav ul{
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-flex;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--color-oscuro);
+    transition: 1s ease
+}
+
+nav ul li a:hover{
+    color: white;
+    text-shadow: 0px 0px 20px var(--color-manzana);
+}
+section{
+padding: 10px;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+margin-bottom: 20px;
+}
+
+section >h2{
+    margin-bottom: 10px;
+}
+.experiencia-container, .skills-container, .Languages-container, .voluntariado-container, .courses-container, .education-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.job, .degree, .language, .skill, .course{
+    background-color: var(--color-agua);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 4px rgba(19, 103, 138, 0.5);
+}
+
+.job{
+    max-width: 200px;
+}
+
+.degree{
+    max-width: 300px;
+}
+
+.language{
+    max-width: 120px;
+}
+
+.Languages-container{
+    justify-content: center;
+}
+
+footer{
+    width: 100%;
+    max-width: 960px;
+    padding: 20px 0px;
+    text-align: center;
+    background-color: var(--color-agua);
+    display: inline-flexbox; 
+}
+
+footer > p {
+    font-weight: bold;
+}
+
+footer > p a {
+    font-weight: normal;
+    color: var(--color-oscuro);
+    transition: 0.5s ease;
+}
+
+footer > p a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+@media screen and (min-width: 992px) {
+    nav ul li{
+        padding: 0px 50px ; 
+    }
+}
+
+
